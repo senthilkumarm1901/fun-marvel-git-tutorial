@@ -180,3 +180,23 @@ To github.com-personal:senthilkumarm1901/fun-marvel-git-tutorial.git
 
 > Pull Request accepted
 > The branch is not deleted (that is just a preference by the LeadScriptWriter, incase more is needed in future). 
+
+
+---
+
+- How does it look for `LeadScriptWriter` when he `git fetch origin` and `git pull` in his `main` branch
+
+```bash
+LeadScriptWriter@terminal fun-marvel-git-tutorial % git log --oneline --all --decorate --graph
+*   9729c21 (origin/main) Merge pull request #1 from senthilkumarm1901/writer1/avengers
+|\  
+| * 4759971 (origin/writer1/avengers) Writer1: Efforts of 1 are pushed to the writer1 branch
+| * f67079b Writer1: add stories about other main avengers
+| * a5d8353 Writer1: add stories about main avengers
+|/  
+* df27d59 (HEAD -> main, origin/writer3/endgame, origin/writer2/others) LeadScriptWriter: push all local efforts to main
+* 6e20a67 LeadScriptWriter: create a file to collate all stories
+* 8c3d5c5 LeadScriptWriter: set initial context to the other 3 writers
+```
+
+---
