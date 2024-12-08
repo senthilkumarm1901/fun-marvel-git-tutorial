@@ -93,3 +93,90 @@ LeadScriptWriter@terminal fun-marvel-git-tutorial % git branch -r
 LeadScriptWriter@terminal fun-marvel-git-tutorial % git branch
 * main
 ```
+
+---
+
+## III. Writer 1's Efforts
+
+- Cloned the repo and created branch `writer1/avengers`
+- Made following 3 commits
+
+```bash
+Writer1@terminal fun-marvel-git-tutorial % git log --oneline --all | head -n 4
+2341887 Writer1: add DeadPool story arc
+f67079b Writer1: add stories about other main avengers
+a5d8353 Writer1: add stories about main avengers
+df27d59 LeadScriptWriter: push all local efforts to main
+```
+
+```bash
+Writer1@terminal fun-marvel-git-tutorial % cat marvel_heroes.md 
+> This is the file where all stories of different heroes converge
+
+## About the Main Avengers
+- **Iron Man:** Created the Iron Man suit and saved himself from captivity.
+- **Captain America:** Led the charge against Hydra during WWII and became a symbol of hope.
+- **Thor:** Defended Asgard and Earth, wielding Mjolnir with unshakable valor.
+
+## Other Main Avengers
+- **Hulk:** Balanced a life of science with his uncontrollable strength to smash enemies.
+- **Hawkeye:** The marksman with unerring aim, standing tall against gods and monsters armed with nothing but a bow and arrow.
+- **Black Widow:** The spy turned Avenger, weaving through shadows with unmatched skill and unwavering loyalty.
+
+- **DeadPool**: The superhero who cannot die and can be a formidable foe to any villain
+```
+
+- Push the changes to remote.
+
+```bash
+Writer1@terminal fun-marvel-git-tutorial % git push origin writer1/avengers
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 1.32 KiB | 1.32 MiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To github.com-personal:senthilkumarm1901/fun-marvel-git-tutorial.git
+   df27d59..2341887  writer1/avengers -> writer1/avengers
+```
+
+- Raise a Pull Request
+
+![](ready_for_PR.png)
+![alt text](PR_page.png)
+
+
+- LeadScriptWriter in the PR suggested `git reset --hard HEAD~1` which the Writer 1 followed  
+
+```
+LeadScriptWriter:
+
+- Please remove Deadpool commit and changes from your branch.
+- Since you are the only one using your branch do git reset --hard f67079b (which ignores 2341887) and then force push the changes to you branch
+- Then I will merge with main
+```
+
+```bash
+Writer1@terminal fun-marvel-git-tutorial % git reset --hard f67079b
+HEAD is now at f67079b Writer1: add stories about other main avengers
+Writer1@terminal fun-marvel-git-tutorial % git log --oneline --all 
+836bda1 (refs/stash) WIP on writer1/avengers: f67079b Writer1: add stories about other main avengers
+876a01f index on writer1/avengers: f67079b Writer1: add stories about other main avengers
+2341887 (origin/writer1/avengers) Writer1: add DeadPool story arc
+f67079b (HEAD -> writer1/avengers) Writer1: add stories about other main avengers
+a5d8353 Writer1: add stories about main avengers
+df27d59 (origin/writer3/endgame, origin/writer2/others, origin/main, origin/HEAD, main) LeadScriptWriter: push all local efforts to main
+6e20a67 LeadScriptWriter: create a file to collate all stories
+8c3d5c5 LeadScriptWriter: set initial context to the other 3 writers
+Writer1@terminal fun-marvel-git-tutorial % git push --force 
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com-personal:senthilkumarm1901/fun-marvel-git-tutorial.git
+ + 2341887...f67079b writer1/avengers -> writer1/avengers (forced update)
+```
+
+![alt text](3_commits_reduced_to_2.png)
+
+
+> Pull Request accepted
+> The branch is not deleted (that is just a preference by the LeadScriptWriter, incase more is needed in future). 
