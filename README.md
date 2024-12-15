@@ -61,3 +61,24 @@ flowchart LR
 % git add README.md && git commit -m "LeadScriptWriter: include all git commands executed"
 % git push origin main
 ```
+
+---
+
+## III. Writer 1's Efforts
+
+- Clone the repo
+- Create a new branch `writer1/avengers` from `main`
+- Made following commits
+    - Update marvel_heroes.md with main avengers stories
+    - Update marvel_heroes.md with other avengers stories
+    - Add DeadPool to Avengers
+
+```bash
+% git add marvel_heroes.md && git commit -m "Writer1: Update marvel_heroes.md with main avengers stories"
+
+% git add marvel_heroes.md && git commit -m "Writer1: Update marvel_heroes.md with other avengers stories"
+
+% git add marvel_heroes.md && git commit -m "Writer1: Add DeadPool story to Avengers"
+
+% git push origin writer1/avengers
+```
