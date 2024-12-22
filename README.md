@@ -29,9 +29,9 @@ flowchart LR
 ```
 
 >[!IMPORTANT]
-> Where do all Writers Collaborate - In `GitHub`
-> Each Writer can create a branch for them to commit their efforts
-> Upon completion of the work, they are expected to seek `Pull Request` Review for merging their branch with `main` where the Lead Script Writer comments and approves.
+> Where do all Writers Collaborate - In `GitHub` <br>
+> Each Writer can create a branch for them to commit their efforts <br>
+> Upon completion of the work, they are expected to seek `Pull Request` Review for merging their branch with `main` where the Lead Script Writer comments and approves. <br>
 
 ---
 
