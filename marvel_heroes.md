@@ -7,6 +7,3 @@
 - Captain Marvel destroys Thanos' fleet.
 - Ant-Man helps navigate the Quantum Realm for time heist missions.
 - Iron Man sacrifices himself to save the universe.
-
-# The Eternals
-- The celestial beings - Eternals - watch over the Thanos Snap and its reversal but chose not to intervene human wars
